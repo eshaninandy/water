@@ -111,7 +111,7 @@ body {
 
 <div class="login-page">
   <div class="form">
-   
+      <h1>sign in page</h1>
     <form action = "http://localhost:5000/result" method = "POST">
          <input type = "text" name = "Name" placeholder="username" >
          <input type = "password" name = "password" placeholder="password" >
@@ -122,8 +122,11 @@ body {
 
 <script type="text/javascript">
   var set={{seto}}
- if (set) {
-  alert("Plese Enter The Correct password");
+ if (set==1) {
+  alert("Oops Looks Like Wrong Data");
+}
+else if(set==2){
+    alert("User Created Successfully");
 }
 </script>
 

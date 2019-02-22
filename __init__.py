@@ -43,7 +43,7 @@ def create():
       gg=result.to_dict(flat=True)
       cur.execute('''INSERT OR IGNORE INTO clinic (uid,name,pass)VALUES ( ?,?, ?)''', ( random.randint(0,5000),result['Name'],result['password'], ))
       conn.commit()    
-      return render_template("result.html",result = result)
+      return render_template('student1.html', seto=2)
     return "hi"
 
 if __name__ == '__main__':
